@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "asciinema-player": "^3.6.3"
+  }
+}
