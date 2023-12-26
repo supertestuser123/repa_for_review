@@ -23,7 +23,7 @@ def ask_question(name):
                 break
         else:
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print("Let's try again, " + name + "!")
+            print(f"Let's try again, {name}!")
             break
 
 

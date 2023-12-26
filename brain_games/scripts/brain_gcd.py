@@ -2,12 +2,16 @@ import random
 from math import gcd
 from brain_games.cli import welcome_user
 
+def generate_random_numbers():
+    """Функция создания рандомных чисел"""
+    num1 = random.randint(1, 50)
+    num2 = random.randint(1, 50)
+    return num1, num2
 
 def ask_question(name):
     correct_answers = 0
-    for i in range(3):
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
+    for _ in range(3):
+        num1, num2 = generate_random_numbers()
         print(f'Question: {num1} {num2}')
         user_answer = int(input("Your answer: "))
 

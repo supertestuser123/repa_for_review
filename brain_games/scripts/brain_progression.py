@@ -4,6 +4,7 @@ from brain_games.cli import welcome_user
 
 
 def generate_progression():
+    """Функция для создания list с арифм. прогрессии внутри + пустое место"""
     progression_length = random.randint(5, 10)
     start = random.randint(1, 10)
     step = random.randint(1, 5)
