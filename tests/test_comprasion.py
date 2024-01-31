@@ -28,4 +28,4 @@ def test_diff_stylish_json(file1, file2, right_answer, format_name):
 
 
 def get_fixture_path(file_name):
-    return Path(Path(__file__).parent.absolute() / 'fixtures' / file_name)
+    return Path(Path(__file__).parent.absolute() / 'data' / file_name)

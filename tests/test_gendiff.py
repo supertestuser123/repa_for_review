@@ -4,16 +4,16 @@ import pytest
 from gendiff.gendiff import generate_diff
 
 
-file1_json = 'tests/fixtures/file1.json'
-file2_json = 'tests/fixtures/file2.json'
+file1_json = 'tests/data/file1.json'
+file2_json = 'tests/data/file2.json'
 
-file1_yaml = 'tests/fixtures/file1.yml'
-file2_yaml = 'tests/fixtures/file2.yml'
+file1_yaml = 'tests/data/file1.yml'
+file2_yaml = 'tests/data/file2.yml'
 
-stylish_path = 'tests/fixtures/check_stylish.txt'
-plain_path = 'tests/fixtures/check_plain.txt'
-json_path = 'tests/fixtures/check_json.txt'
-common_files_path = 'tests/fixtures/check_identical_files.txt'
+stylish_path = 'tests/data/check_stylish.txt'
+plain_path = 'tests/data/check_plain.txt'
+json_path = 'tests/data/check_json.txt'
+common_files_path = 'tests/data/check_identical_files.txt'
 
 options = [(file1_json, file2_json, 'stylish', stylish_path),
            (file1_json, file2_json, 'plain', plain_path),
